@@ -1,0 +1,7 @@
+{
+  "name": "EmergencyContactBD",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

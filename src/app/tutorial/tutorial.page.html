@@ -1,0 +1,46 @@
+<ion-header no-border>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content fullscreen>
+    <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false">
+      <ion-slide>
+        <img src="assets/tut1.jpg" width="100%" class="slide-image" />
+        <h2 class="slide-title">
+          Welcome to
+          <b>Intricate Lab</b>
+        </h2>
+        <p>        
+          <b>BD essentials is an app</b> to find emergency contacts and keep your day to day ledger      
+        </p>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/tut2.jpg" class="slide-image" />
+        <h2 class="slide-title">Emergency Contacts</h2>
+        <p>
+          <b>Police, Fire service etc</b> all number neccessary are included and you can also add your custom number by clicking the plus button</p>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/tut3.jpg" class="slide-image" />
+        <h2 class="slide-title">Daily Accounting</h2>
+        <p>
+          <b>Keep track </b> of your daily spending by keeping an entry in the daily accounting field</p>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/tut4.jpg" class="slide-image" />
+        <h2 class="slide-title">Ready to See?</h2>
+        <ion-button fill="clear" (click)="startApp()">
+          Continue
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+  
