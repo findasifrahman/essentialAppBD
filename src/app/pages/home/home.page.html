@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+        <img src="assets/main.jpg" width="100%" height="100%" alt="logo">
+      <ion-card-header>
+        <ion-card-subtitle>Essentials</ion-card-subtitle>
+        <ion-card-title>Welcome to Essentials By Intricate Lab</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p style="text-align: justify">You can see the emergency contact for various organization and Do your Day to day Accounting with this App. Hope this Helps Someone in their Day to Day Journey</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Essential</ion-label>
+      </ion-list-header>
+      <ion-button expand="full"  color="tertiary" routerLink="/tabs-page/tabs/list">
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-label>Emergency Numbers</ion-label>
+      </ion-button>
+      <ion-button expand="full"  color="dark" routerLink="/category">
+        <ion-icon slot="start" color="medium" name="build"></ion-icon>
+        <ion-label>Simple Accounting</ion-label>
+      </ion-button>
+      <ion-button expand="full" color="medium" routerLink="/tabs-page/tabs/about">
+        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+        <ion-label>About Us</ion-label>
+      </ion-button>
+
+    </ion-list>
+</ion-content>

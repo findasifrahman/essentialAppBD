@@ -14,9 +14,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage';
 
-import { TabsPagePageModule } from './tabs-page/tabs-page.module';
-import { LedgercategoyPageModule } from './ledgercategoy/ledgercategoy.module';
-import { LedgerPageModule } from './ledger/ledger.module';
+import { TabsPagePageModule } from './pages/tabs-page/tabs-page.module';
+import { LedgercategoyPageModule } from './pages/ledgercategoy/ledgercategoy.module';
+import { LedgerPageModule } from './pages/ledger/ledger.module';
 import { TutorialPageModule } from './tutorial/tutorial.module';
 import { CheckTutorial } from './providers/check-tutorial.service';
 @NgModule({

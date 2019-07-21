@@ -9,16 +9,16 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    loadChildren: './pages/home/home.module#HomePageModule'
   },
   /*{
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
   },
   { path: 'list-detail', loadChildren: './list-detail/list-detail.module#ListDetailPageModule' },*/
-  { path: 'tabs-page', loadChildren: './tabs-page/tabs-page.module#TabsPagePageModule' },
-  { path: 'category', loadChildren: './ledgercategoy/ledgercategoy.module#LedgercategoyPageModule' },
-  { path: 'ledger/:category_id', loadChildren: './ledger/ledger.module#LedgerPageModule' },
+  { path: 'tabs-page', loadChildren: './pages/tabs-page/tabs-page.module#TabsPagePageModule' },
+  { path: 'category', loadChildren: './pages/ledgercategoy/ledgercategoy.module#LedgercategoyPageModule' },
+  { path: 'ledger/:category_id', loadChildren: './pages/ledger/ledger.module#LedgerPageModule' },
   { path: 'tutorial', loadChildren: './tutorial/tutorial.module#TutorialPageModule', canLoad: [CheckTutorial] },
   //{ path: 'map', loadChildren: './map/map.module#MapPageModule' },
 

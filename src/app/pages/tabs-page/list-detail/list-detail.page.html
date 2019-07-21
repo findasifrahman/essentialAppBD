@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="defaultHref"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+      <img src="{{img}}" width="100%" height="100%" alt="logo">
+
+    <ion-card-header>
+      <ion-card-subtitle>{{name}}</ion-card-subtitle>
+      <ion-card-title>{{number}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content *ngIf="showRemove">
+      <ion-button (click)="removeNum()" Fill="clear">         
+        <ion-icon slot="start" color="medium" name="trash"></ion-icon>
+        <ion-label color="danger">Remove</ion-label>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
